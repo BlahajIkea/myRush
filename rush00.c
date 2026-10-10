@@ -23,12 +23,10 @@ void	mid(int x, int y)
 	{
 		while (i < x)
 		{
-			if ((i == 0 || i > x -2) && x > 0)
+			if ((i == 0 && x > 1) || i > x -2) 
 				ft_putchar('B');
-			if (i < x -2)
-			{
-				ft_putchar('-');
-			}
+			else
+				ft_putchar(' ');
 			i++;
 		}
 		ft_putchar('\n');
